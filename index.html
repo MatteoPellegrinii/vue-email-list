@@ -10,7 +10,7 @@
 </head>
 <body>
     <ul id="app" class="container">
-        <li v-if="mails === 9 ? 'appear' : 'none'" v-for="(mail, i) in mails" :key="i" >
+        <li v-if="mails.lenght === 9 ? 'appear' : 'none'" v-for="(mail, i) in mails" :key="i" >
             {{mail}}
         </li>
     </ul>
