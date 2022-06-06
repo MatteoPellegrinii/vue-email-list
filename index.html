@@ -9,11 +9,11 @@
     <title>Email list</title>
 </head>
 <body>
-    <div id="app" class="container">
-        <ul v-for="(mail, i) in mails" :key="i" >
-            <li>{{mail}}</li>
-        </ul>
-    </div>
+    <ul id="app" class="container">
+        <li v-if="mails === 9 ? 'appear' : 'none'" v-for="(mail, i) in mails" :key="i" >
+            {{mail}}
+        </li>
+    </ul>
 
 
     <script src="script.js"></script>

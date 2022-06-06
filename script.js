@@ -8,15 +8,7 @@ const mailList = new Vue({
                     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((result)=>{
             const risultato = result.data.response;
-            if (index = 9 ) {  
-                this.mails.push(risultato);
-                console.log(risultato);
-            }
-            else {
-               this.mails = []
-            }
-            
-            
+            this.mails.push(risultato);
         })
         }   
         },
