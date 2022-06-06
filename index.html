@@ -9,13 +9,18 @@
     <title>Email list</title>
 </head>
 <body>
-    <div v-if="mails.length === 7">
-    <ul id="app" class="container">
-        <li  v-for="(mail, i) in mails" :key="i" >
-            {{mail}}
-        </li>
-    </ul>
-</div>
+    
+    <div id="app" class="container">
+        <ul v-if="mails.length === 10">
+            <li  v-for="(mail, i) in mails" :key="i" >
+                {{mail}}
+            </li>
+        </ul>
+
+        
+    </div>
+
+    
 
 
     <script src="script.js"></script>
